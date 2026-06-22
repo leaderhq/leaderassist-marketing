@@ -13,7 +13,7 @@ export default function BlogPostNotFound() {
         href="/"
         className="mt-8 inline-flex min-h-[44px] items-center justify-center rounded-xl bg-brand-green px-6 text-base font-semibold text-white transition hover:brightness-110"
       >
-        ← Back to LeaderCal
+        ← Back to LeaderTask
       </Link>
     </div>
   );

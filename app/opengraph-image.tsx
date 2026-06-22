@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "LeaderCal — Scheduling built for leaders";
+export const alt = "LeaderTask — Task management built for leaders";
 
 export default function OpengraphImage() {
   return new ImageResponse(
@@ -26,17 +26,17 @@ export default function OpengraphImage() {
             <path d="M10 38 L24 27 L38 38 L38 44 L24 33 L10 44 Z" fill="#5cb85c" />
           </svg>
           <div style={{ fontSize: 78, fontWeight: 800, letterSpacing: -2, color: "#FFFFFF", display: "flex" }}>
-            Leader<span style={{ color: "#5cb85c" }}>Cal</span>
+            Leader<span style={{ color: "#5cb85c" }}>Task</span>
           </div>
         </div>
         <div style={{ fontSize: 62, fontWeight: 700, color: "#FFFFFF", lineHeight: 1.08, marginBottom: 8, display: "flex" }}>
-          Scheduling built
+          Tasks built for
         </div>
         <div style={{ fontSize: 62, fontWeight: 700, color: "#5cb85c", lineHeight: 1.08, marginBottom: 44, display: "flex" }}>
-          for leaders.
+          your whole team.
         </div>
         <div style={{ fontSize: 27, fontWeight: 500, color: "#a1a1aa", display: "flex", maxWidth: 900 }}>
-          Leadership booking profiles · team scheduling · smart availability
+          Data-born tasks · team-wide visibility · follow-up tracking
         </div>
       </div>
     ),

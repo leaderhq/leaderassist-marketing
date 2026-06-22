@@ -65,7 +65,7 @@ describe('SiteNav', () => {
     setup();
     render(<SiteNav productSuffix="Cal" links={NAV_LINKS} />);
 
-    expect(screen.getByAltText('LeaderCal')).toBeInTheDocument();
+    expect(screen.getByAltText('LeaderTask')).toBeInTheDocument();
   });
 
   it('renders all provided nav links on desktop', () => {

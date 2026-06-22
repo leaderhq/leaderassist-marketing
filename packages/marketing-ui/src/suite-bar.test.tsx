@@ -28,11 +28,11 @@ describe('SuiteBar', () => {
   });
 
   it('renders correctly for a different product appUrl', () => {
-    render(<SuiteBar appUrl="https://cal.leaderhq.io" />);
+    render(<SuiteBar appUrl="https://task.leaderhq.io" />);
 
     expect(screen.getByRole('link', { name: /client login/i })).toHaveAttribute(
       'href',
-      'https://cal.leaderhq.io/login',
+      'https://task.leaderhq.io/login',
     );
   });
 });

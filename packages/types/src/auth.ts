@@ -12,7 +12,7 @@ export interface User {
  *
  * `sub` is the user's UUID from `core.users`.
  * `product` is the `ProductSlug` the token is scoped to — a token issued for
- * `"leadercal"` must not be accepted by LeaderLeads middleware.
+ * `"leadertask"` must not be accepted by LeaderLeads middleware.
  */
 export interface JwtPayload {
   /** User UUID (`core.users.id`). */
@@ -37,6 +37,6 @@ export interface JwtPayload {
 export interface SsoCallbackParams {
   /** Short-lived SSO token issued by LeaderHQ after the user authenticates. */
   token: string;
-  /** Target product slug, e.g. `"leadercal"`. */
+  /** Target product slug, e.g. `"leadertask"`. */
   product: string;
 }

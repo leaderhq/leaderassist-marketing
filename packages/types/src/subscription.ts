@@ -2,7 +2,7 @@
  * Identifies which Leader Suite product a subscription or JWT is associated
  * with. `'bundle'` covers all products under a single Stripe subscription.
  */
-export type ProductSlug = 'leaderhq' | 'leadersend' | 'leadercal' | 'leaderdc' | 'bundle';
+export type ProductSlug = 'leaderhq' | 'leadersend' | 'leadertask' | 'leaderdc' | 'bundle';
 
 /** Feature tier. `'pro'` unlocks higher limits and advanced features. */
 export type Tier = 'starter' | 'pro';

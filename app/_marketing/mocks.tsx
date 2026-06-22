@@ -1,203 +1,185 @@
-/**
- * Pure CSS/SVG product mocks for the LeaderCal marketing page.
- * No stock photos, no AI faces. The CalendarBookingMock shows what a leader's
- * booking page actually looks like — profile card, meeting types, calendar
- * grid, time slots. Decorative only: hidden from assistive tech.
- */
-
 const NAVY = '#0d1b2e';
 const GREEN = '#5cb85c';
+const BLUE = '#1862ea';
 
-/** A calendar grid cell for the booking mock. */
-function CalCell({
-  day,
-  active,
-  selected,
-  muted,
-}: {
-  day: number | null;
-  active?: boolean;
-  selected?: boolean;
-  muted?: boolean;
-}) {
-  if (!day) return <div />;
-  return (
-    <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: 28,
-        height: 28,
-        borderRadius: '50%',
-        fontSize: 11,
-        fontWeight: selected ? 700 : active ? 600 : 400,
-        color: selected ? '#fff' : active ? NAVY : '#a1a1aa',
-        background: selected ? GREEN : active ? 'color-mix(in srgb, #5cb85c 12%, transparent)' : 'transparent',
-        cursor: active ? 'pointer' : 'default',
-      }}
-    >
-      {day}
-    </div>
-  );
+interface TaskItem {
+  title: string;
+  status: 'todo' | 'in_progress' | 'done';
+  priority: 'high' | 'medium' | 'low';
+  assignee: string;
+  due: string;
 }
 
-/**
- * A booking calendar mock — the hero visual for LeaderCal. Shows a leader's
- * public booking page: profile header, meeting type pills, June calendar grid,
- * and available time slots for the selected day.
- */
-export function CalendarBookingMock() {
-  // June 2026 starts on Monday (ISO week layout: Mon–Sun)
-  const weeks = [
-    [1, 2, 3, 4, 5, 6, 7],
-    [8, 9, 10, 11, 12, 13, 14],
-    [15, 16, 17, 18, 19, 20, 21],
-    [22, 23, 24, 25, 26, 27, 28],
-    [29, 30, null, null, null, null, null],
-  ] as (number | null)[][];
+const TASKS: TaskItem[] = [
+  { title: 'Follow up with Alex Leader', status: 'in_progress', priority: 'high', assignee: 'JD', due: 'Today' },
+  { title: 'Send proposal to Summit Team', status: 'todo', priority: 'high', assignee: 'ML', due: 'Tomorrow' },
+  { title: 'Review Q2 pipeline report', status: 'todo', priority: 'medium', assignee: 'JD', due: 'Jun 24' },
+  { title: 'Onboard Northwind reps', status: 'done', priority: 'medium', assignee: 'SA', due: 'Jun 20' },
+  { title: 'Schedule board prep call', status: 'todo', priority: 'low', assignee: 'JD', due: 'Jun 27' },
+];
 
-  // Available days (has open slots)
-  const available = new Set([3, 5, 10, 12, 17, 19, 24, 26]);
-  const selectedDay = 17;
+const STATUS_LABEL: Record<TaskItem['status'], string> = {
+  todo: 'To Do',
+  in_progress: 'In Progress',
+  done: 'Done',
+};
 
+const PRIORITY_COLOR: Record<TaskItem['priority'], string> = {
+  high: '#ef4444',
+  medium: '#f59e0b',
+  low: '#6b7280',
+};
+
+export function TaskListMock() {
   return (
     <div
-      aria-hidden
+      aria-hidden="true"
       style={{
-        width: 300,
+        width: 340,
         maxWidth: '100%',
-        background: '#fff',
-        borderRadius: 20,
-        boxShadow: `0 25px 50px -12px ${NAVY}40, 0 8px 20px -8px ${NAVY}20`,
+        background: '#f6f8fb',
+        borderRadius: 18,
+        boxShadow: '0 24px 64px rgba(6,22,62,0.18), 0 2px 8px rgba(6,22,62,0.08)',
         overflow: 'hidden',
-        userSelect: 'none',
-        fontFamily: 'inherit',
+        fontFamily: 'system-ui, -apple-system, sans-serif',
       }}
     >
-      {/* Profile header */}
-      <div style={{ background: NAVY, padding: '18px 20px 14px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          {/* Avatar placeholder */}
-          <div
-            style={{
-              width: 42,
-              height: 42,
-              borderRadius: '50%',
-              background: 'linear-gradient(135deg, #5cb85c 0%, #0160ed 100%)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: 15,
-              fontWeight: 700,
-              color: '#fff',
-              flexShrink: 0,
-              border: '2px solid rgba(255,255,255,0.25)',
-            }}
-          >
-            AL
-          </div>
-          <div>
-            <p style={{ margin: 0, fontSize: 13, fontWeight: 700, color: '#fff', lineHeight: 1.3 }}>
-              Alex Leader
-            </p>
-            <p style={{ margin: 0, fontSize: 10, color: '#94a3b8', lineHeight: 1.4 }}>
-              VP of Sales · Summit Team
-            </p>
-          </div>
+      {/* App header bar */}
+      <div style={{ background: NAVY, padding: '14px 18px', display: 'flex', alignItems: 'center', gap: 10 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+          <div style={{ width: 22, height: 3, borderRadius: 2, background: BLUE }} />
+          <div style={{ width: 17, height: 3, borderRadius: 2, background: '#fff', marginLeft: 3 }} />
+          <div style={{ width: 12, height: 3, borderRadius: 2, background: GREEN, marginLeft: 6 }} />
         </div>
+        <span style={{ color: '#fff', fontWeight: 700, fontSize: 14, letterSpacing: '-0.3px' }}>
+          Leader<span style={{ color: GREEN }}>Task</span>
+        </span>
+        <div style={{ flex: 1 }} />
+        <div style={{
+          width: 28, height: 28, borderRadius: '50%',
+          background: BLUE, display: 'flex', alignItems: 'center', justifyContent: 'center',
+          fontSize: 11, fontWeight: 700, color: '#fff',
+        }}>JD</div>
       </div>
 
-      {/* Meeting type pills */}
-      <div style={{ padding: '14px 16px 10px', borderBottom: '1px solid #f4f4f5' }}>
-        <p style={{ margin: '0 0 8px', fontSize: 9, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#a1a1aa' }}>
-          Choose a meeting type
-        </p>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
-          {[
-            { label: 'Executive 1:1', duration: '30 min', selected: true },
-            { label: 'Strategy Session', duration: '60 min', selected: false },
-            { label: 'Board Prep', duration: '90 min', selected: false },
-          ].map((t) => (
+      {/* Workspace & list header */}
+      <div style={{ padding: '12px 18px 8px', background: '#fff', borderBottom: '1px solid #e5e7eb' }}>
+        <div style={{ fontSize: 11, color: '#9ca3af', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+          My Workspace
+        </div>
+        <div style={{ fontSize: 15, fontWeight: 700, color: NAVY, marginTop: 2 }}>My Tasks</div>
+        <div style={{ display: 'flex', gap: 6, marginTop: 8 }}>
+          {['All', 'In Progress', 'High Priority'].map((tab, i) => (
             <div
-              key={t.label}
+              key={tab}
               style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                padding: '7px 10px',
-                borderRadius: 8,
-                border: t.selected ? `1.5px solid ${GREEN}` : '1.5px solid #e4e4e7',
-                background: t.selected ? 'color-mix(in srgb, #5cb85c 8%, #fff)' : '#fafafa',
+                padding: '3px 10px',
+                borderRadius: 20,
+                fontSize: 11,
+                fontWeight: 600,
+                background: i === 0 ? NAVY : '#f3f4f6',
+                color: i === 0 ? '#fff' : '#6b7280',
               }}
             >
-              <span style={{ fontSize: 11, fontWeight: t.selected ? 600 : 400, color: t.selected ? NAVY : '#52525b' }}>
-                {t.label}
-              </span>
-              <span style={{ fontSize: 10, color: t.selected ? GREEN : '#a1a1aa', fontWeight: 500 }}>
-                {t.duration}
-              </span>
+              {tab}
             </div>
           ))}
         </div>
       </div>
 
-      {/* Calendar */}
-      <div style={{ padding: '12px 16px 8px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8 }}>
-          <span style={{ fontSize: 11, fontWeight: 700, color: NAVY }}>June 2026</span>
-          <div style={{ display: 'flex', gap: 6 }}>
-            <div style={{ width: 18, height: 18, borderRadius: 4, background: '#f4f4f5', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 9, color: '#71717a' }}>‹</div>
-            <div style={{ width: 18, height: 18, borderRadius: 4, background: '#f4f4f5', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 9, color: '#71717a' }}>›</div>
-          </div>
-        </div>
+      {/* Task list */}
+      <div style={{ padding: '8px 0' }}>
+        {TASKS.map((task, i) => (
+          <div
+            key={task.title}
+            style={{
+              padding: '9px 18px',
+              borderBottom: i < TASKS.length - 1 ? '1px solid #f0f2f7' : 'none',
+              display: 'flex',
+              alignItems: 'flex-start',
+              gap: 10,
+              opacity: task.status === 'done' ? 0.55 : 1,
+            }}
+          >
+            {/* Status circle */}
+            <div style={{
+              marginTop: 2,
+              width: 16,
+              height: 16,
+              borderRadius: '50%',
+              border: task.status === 'done' ? 'none' : `2px solid ${task.status === 'in_progress' ? BLUE : '#d1d5db'}`,
+              background: task.status === 'done' ? GREEN : task.status === 'in_progress' ? `${BLUE}18` : 'transparent',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              flexShrink: 0,
+            }}>
+              {task.status === 'done' && (
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none">
+                  <path d="M1.5 4.5L3.5 6.5L7.5 2.5" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              )}
+              {task.status === 'in_progress' && (
+                <div style={{ width: 6, height: 6, borderRadius: '50%', background: BLUE }} />
+              )}
+            </div>
 
-        {/* Day labels Mon–Sun */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 2, marginBottom: 4 }}>
-          {['M', 'T', 'W', 'T', 'F', 'S', 'S'].map((d, i) => (
-            <div key={i} style={{ textAlign: 'center', fontSize: 9, fontWeight: 600, color: '#a1a1aa' }}>{d}</div>
-          ))}
-        </div>
-
-        {/* Calendar cells */}
-        {weeks.map((week, wi) => (
-          <div key={wi} style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 2, marginBottom: 2 }}>
-            {week.map((day, di) => (
-              <div key={di} style={{ display: 'flex', justifyContent: 'center' }}>
-                <CalCell
-                  day={day}
-                  active={day !== null && available.has(day)}
-                  selected={day === selectedDay}
-                />
+            {/* Task content */}
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <div style={{
+                fontSize: 12.5,
+                fontWeight: 600,
+                color: task.status === 'done' ? '#9ca3af' : NAVY,
+                textDecoration: task.status === 'done' ? 'line-through' : 'none',
+                whiteSpace: 'nowrap',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+              }}>
+                {task.title}
               </div>
-            ))}
+              <div style={{ display: 'flex', gap: 6, marginTop: 4, alignItems: 'center' }}>
+                {/* Priority dot */}
+                <div style={{
+                  width: 6, height: 6, borderRadius: '50%',
+                  background: PRIORITY_COLOR[task.priority],
+                  flexShrink: 0,
+                }} />
+                <span style={{ fontSize: 10.5, color: '#9ca3af' }}>{STATUS_LABEL[task.status]}</span>
+                <span style={{ fontSize: 10.5, color: '#d1d5db' }}>·</span>
+                <span style={{ fontSize: 10.5, color: '#9ca3af' }}>{task.due}</span>
+              </div>
+            </div>
+
+            {/* Assignee avatar */}
+            <div style={{
+              width: 22, height: 22, borderRadius: '50%',
+              background: task.assignee === 'JD' ? BLUE : task.assignee === 'ML' ? '#7c3aed' : '#06b6d4',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: 9, fontWeight: 700, color: '#fff',
+              flexShrink: 0,
+            }}>
+              {task.assignee}
+            </div>
           </div>
         ))}
       </div>
 
-      {/* Time slots for selected day */}
-      <div style={{ padding: '6px 16px 14px', borderTop: '1px solid #f4f4f5' }}>
-        <p style={{ margin: '0 0 6px', fontSize: 9, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#a1a1aa' }}>
-          Wed, Jun 17 — Available times
-        </p>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-          {['9:00 AM', '10:30 AM', '2:00 PM'].map((t, i) => (
-            <div
-              key={t}
-              style={{
-                padding: '6px 10px',
-                borderRadius: 7,
-                background: i === 0 ? GREEN : '#f4f4f5',
-                fontSize: 10,
-                fontWeight: 600,
-                color: i === 0 ? '#fff' : '#52525b',
-                textAlign: 'center',
-              }}
-            >
-              {t}
-            </div>
-          ))}
+      {/* Add task bar */}
+      <div style={{
+        padding: '10px 18px',
+        borderTop: '1px solid #e5e7eb',
+        background: '#fff',
+        display: 'flex',
+        alignItems: 'center',
+        gap: 8,
+      }}>
+        <div style={{
+          width: 20, height: 20, borderRadius: '50%',
+          border: '1.5px dashed #d1d5db',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          flexShrink: 0,
+        }}>
+          <span style={{ color: '#9ca3af', fontSize: 13, lineHeight: 1 }}>+</span>
         </div>
+        <span style={{ fontSize: 12, color: '#9ca3af' }}>Add a task…</span>
       </div>
     </div>
   );

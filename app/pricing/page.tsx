@@ -117,7 +117,7 @@ const FAQS = [
 export default function PricingPage() {
   return (
     <div className="flex min-h-screen flex-col bg-white text-zinc-900">
-      <SuiteBar appUrl="https://cal.leaderhq.io" />
+      <SuiteBar appUrl="https://task.leaderhq.io" />
       <SiteNav
         productSuffix="Leads"
         links={[{ label: "How It Works", href: "/how-it-works" }, { label: "Memory Moment", href: "/memory-moment" }, { label: "Solutions", href: "#" }, { label: "Blog", href: "/blog" }]}

@@ -17,7 +17,7 @@ export default function RootError({ reset }: { error: Error; reset: () => void }
           </button>
         </div>
         <p className="mt-6 text-xs text-zinc-400">
-          Powered by <span className="font-semibold">LeaderCal</span>
+          Powered by <span className="font-semibold">LeaderTask</span>
         </p>
       </main>
     </div>

@@ -103,6 +103,6 @@ describe('SiteFooter', () => {
   it('uses the productSuffix in the wordmark alt text', () => {
     render(<SiteFooter productSuffix="Cal" columns={COLUMNS} />);
 
-    expect(screen.getByAltText('LeaderCal')).toBeInTheDocument();
+    expect(screen.getByAltText('LeaderTask')).toBeInTheDocument();
   });
 });

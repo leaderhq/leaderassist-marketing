@@ -14,27 +14,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://leadercal.io"),
-  title: "LeaderCal — Scheduling built for leaders",
-  description: "The scheduling platform built for field leaders and their teams. Leadership booking profiles, team scheduling, custom event types, and seamless calendar sync — all in one.",
-  applicationName: "LeaderCal",
+  metadataBase: new URL("https://leadertask.io"),
+  title: "LeaderTask — Task management built for leaders",
+  description: "Slim team task management for the Leader Suite. Tasks born from real data, team-wide visibility, and follow-up tracking so nothing slips between check-ins.",
+  applicationName: "LeaderTask",
   manifest: "/manifest.webmanifest",
   appleWebApp: {
     capable: true,
-    title: "LeaderCal",
+    title: "LeaderTask",
     statusBarStyle: "default",
   },
   openGraph: {
     type: "website",
-    siteName: "LeaderCal",
-    title: "LeaderCal — Scheduling built for leaders",
-    description: "Leadership booking profiles, team scheduling, and smart availability — so your calendar works as hard as you do.",
-    url: "https://leadercal.io",
+    siteName: "LeaderTask",
+    title: "LeaderTask — Task management built for leaders",
+    description: "Tasks born from real LeaderHQ data — never start from scratch. Team-wide visibility, priority tracking, and follow-up reminders all in one.",
+    url: "https://leadertask.io",
   },
   twitter: {
     card: "summary_large_image",
-    title: "LeaderCal — Scheduling built for leaders",
-    description: "Leadership booking profiles, team scheduling, and smart availability — so your calendar works as hard as you do.",
+    title: "LeaderTask — Task management built for leaders",
+    description: "Tasks born from real LeaderHQ data — never start from scratch. Team-wide visibility, priority tracking, and follow-up reminders all in one.",
   },
 };
 

@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SuiteBar, SiteNav, SiteFooter } from '@leader/marketing-ui';
 
-const APP_URL = 'https://cal.leaderhq.io';
+const APP_URL = 'https://task.leaderhq.io';
 
 export const metadata: Metadata = {
-  title: 'Blog — LeaderCal',
+  title: 'Blog — LeaderTask',
   description: 'Insights, guides, and best practices for leaders who want to own their calendar.',
 };
 
@@ -55,7 +55,7 @@ export default function BlogPage() {
               Coming soon
             </p>
             <h1 className="mt-4 text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl">
-              The LeaderCal Blog
+              The LeaderTask Blog
             </h1>
             <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-zinc-300">
               Insights, guides, and scheduling strategies for leaders who
@@ -65,7 +65,7 @@ export default function BlogPage() {
               href="/"
               className="mt-8 inline-flex min-h-[44px] items-center justify-center rounded-xl bg-brand-green px-6 text-base font-semibold text-white shadow-md shadow-brand-green/25 transition hover:brightness-110"
             >
-              ← Back to LeaderCal
+              ← Back to LeaderTask
             </Link>
           </div>
         </section>

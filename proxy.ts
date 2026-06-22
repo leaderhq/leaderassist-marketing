@@ -7,7 +7,7 @@ import { NextRequest, NextResponse } from 'next/server';
  * etc.) were split into the separate leader-leads-app repo. This site hosts
  * only the public marketing pages and the public card viewer (/c/[slug]).
  */
-export default function middleware(_req: NextRequest): NextResponse {
+export default function proxy(_req: NextRequest): NextResponse {
   return NextResponse.next();
 }
 
