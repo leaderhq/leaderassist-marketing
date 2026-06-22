@@ -1,0 +1,42 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="400" height="240" fill="#f9f9f9" stroke="none"/>
+  <!-- Sun -->
+  <circle cx="340" cy="45" r="22" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="340" y1="17" x2="340" y2="10" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="340" y1="73" x2="340" y2="80" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="312" y1="45" x2="305" y2="45" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="368" y1="45" x2="375" y2="45" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="320" y1="25" x2="315" y2="19" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="360" y1="65" x2="365" y2="71" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="320" y1="65" x2="315" y2="71" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="360" y1="25" x2="365" y2="19" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Ground / sidewalk -->
+  <line x1="0" y1="185" x2="400" y2="185" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Path lines on sidewalk -->
+  <line x1="30" y1="185" x2="370" y2="185" stroke="#ccc" stroke-width="1" stroke-dasharray="20 10"/>
+  <!-- Houses in background -->
+  <polygon points="60,140 90,115 120,140" fill="white" stroke="#1a1a1a" stroke-width="1.2"/>
+  <rect x="68" y="140" width="44" height="45" fill="white" stroke="#1a1a1a" stroke-width="1.2"/>
+  <rect x="83" y="155" width="14" height="30" rx="1" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+  <polygon points="250,140 280,115 310,140" fill="white" stroke="#1a1a1a" stroke-width="1.2"/>
+  <rect x="258" y="140" width="44" height="45" fill="white" stroke="#1a1a1a" stroke-width="1.2"/>
+  <rect x="273" y="155" width="14" height="30" rx="1" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Sales rep walking with phone/clipboard -->
+  <circle cx="180" cy="110" r="13" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="180" y1="123" x2="180" y2="163" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="180" y1="138" x2="162" y2="152" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Arm forward with phone -->
+  <line x1="180" y1="138" x2="200" y2="148" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="180" y1="163" x2="168" y2="185" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="180" y1="163" x2="192" y2="185" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Phone with checklist / map -->
+  <rect x="198" y="140" width="24" height="32" rx="3" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="203" y1="148" x2="218" y2="148" stroke="#aaa" stroke-width="1"/>
+  <line x1="203" y1="153" x2="215" y2="153" stroke="#aaa" stroke-width="1"/>
+  <line x1="203" y1="158" x2="218" y2="158" stroke="#aaa" stroke-width="1"/>
+  <!-- Checkmarks on list -->
+  <polyline points="203,147 205,150 208,145" stroke="#3F7A1F" stroke-width="1" fill="none"/>
+  <polyline points="203,152 205,155 208,150" stroke="#3F7A1F" stroke-width="1" fill="none"/>
+  <!-- Sweat drop -->
+  <path d="M192 95 C190 88 186 84 188 80 C190 76 196 80 192 95" fill="none" stroke="#aaa" stroke-width="1"/>
+</svg>

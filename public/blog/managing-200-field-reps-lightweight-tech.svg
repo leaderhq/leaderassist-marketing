@@ -1,0 +1,68 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="400" height="240" fill="#f9f9f9" stroke="none"/>
+  <!-- Manager at desk with laptop -->
+  <circle cx="200" cy="50" r="13" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="200" y1="63" x2="200" y2="102" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="200" y1="78" x2="183" y2="93" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="200" y1="78" x2="217" y2="93" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Desk -->
+  <rect x="140" y="102" width="120" height="8" rx="2" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Laptop on desk -->
+  <rect x="155" y="75" width="90" height="60" rx="3" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="140" y="102" width="120" height="8" rx="2" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Screen -->
+  <rect x="162" y="82" width="76" height="42" rx="2" fill="#f5f5f5" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Grid of reps on screen -->
+  <g stroke="#aaa" stroke-width="0.8">
+    <circle cx="175" cy="91" r="5" fill="white"/>
+    <circle cx="188" cy="91" r="5" fill="white"/>
+    <circle cx="201" cy="91" r="5" fill="white"/>
+    <circle cx="214" cy="91" r="5" fill="white"/>
+    <circle cx="227" cy="91" r="5" fill="white"/>
+    <circle cx="175" cy="105" r="5" fill="white"/>
+    <circle cx="188" cy="105" r="5" fill="white"/>
+    <circle cx="201" cy="105" r="5" fill="white"/>
+    <circle cx="214" cy="105" r="5" fill="white"/>
+    <circle cx="227" cy="105" r="5" fill="white"/>
+    <circle cx="175" cy="118" r="5" fill="white"/>
+    <circle cx="188" cy="118" r="5" fill="white"/>
+    <circle cx="201" cy="118" r="5" fill="white"/>
+    <circle cx="214" cy="118" r="5" fill="white"/>
+    <circle cx="227" cy="118" r="5" fill="white"/>
+  </g>
+  <!-- Field reps below (small figures in rows) -->
+  <g stroke="#1a1a1a" stroke-width="1">
+    <!-- row 1 -->
+    <circle cx="50" cy="168" r="7" fill="white"/>
+    <line x1="50" y1="175" x2="50" y2="188"/>
+    <line x1="50" y1="180" x2="43" y2="187"/>
+    <line x1="50" y1="180" x2="57" y2="187"/>
+    <circle cx="90" cy="168" r="7" fill="white"/>
+    <line x1="90" y1="175" x2="90" y2="188"/>
+    <line x1="90" y1="180" x2="83" y2="187"/>
+    <line x1="90" y1="180" x2="97" y2="187"/>
+    <circle cx="130" cy="168" r="7" fill="white"/>
+    <line x1="130" y1="175" x2="130" y2="188"/>
+    <line x1="130" y1="180" x2="123" y2="187"/>
+    <line x1="130" y1="180" x2="137" y2="187"/>
+    <circle cx="270" cy="168" r="7" fill="white"/>
+    <line x1="270" y1="175" x2="270" y2="188"/>
+    <line x1="270" y1="180" x2="263" y2="187"/>
+    <line x1="270" y1="180" x2="277" y2="187"/>
+    <circle cx="310" cy="168" r="7" fill="white"/>
+    <line x1="310" y1="175" x2="310" y2="188"/>
+    <line x1="310" y1="180" x2="303" y2="187"/>
+    <line x1="310" y1="180" x2="317" y2="187"/>
+    <circle cx="350" cy="168" r="7" fill="white"/>
+    <line x1="350" y1="175" x2="350" y2="188"/>
+    <line x1="350" y1="180" x2="343" y2="187"/>
+    <line x1="350" y1="180" x2="357" y2="187"/>
+  </g>
+  <!-- "..." between reps -->
+  <text x="200" y="175" font-family="sans-serif" font-size="14" fill="#888" stroke="none" text-anchor="middle">· · ·</text>
+  <!-- Connecting lines from screen to reps -->
+  <line x1="180" y1="140" x2="80" y2="162" stroke="#ddd" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="200" y1="140" x2="200" y2="162" stroke="#ddd" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="220" y1="140" x2="310" y2="162" stroke="#ddd" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="200" y="222" font-family="sans-serif" font-size="11" fill="#555" stroke="none" text-anchor="middle">200 reps. One dashboard.</text>
+</svg>

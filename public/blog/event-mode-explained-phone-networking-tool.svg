@@ -1,0 +1,44 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="400" height="240" fill="#f9f9f9" stroke="none"/>
+  <!-- Person holding phone up high -->
+  <circle cx="130" cy="100" r="13" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="130" y1="113" x2="130" y2="152" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="130" y1="130" x2="110" y2="148" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Arm raised holding phone -->
+  <path d="M130 125 C140 115 155 100 165 80" stroke="#1a1a1a" stroke-width="1.5" fill="none"/>
+  <line x1="130" y1="152" x2="120" y2="175" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="130" y1="152" x2="140" y2="175" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Large phone in full-screen event mode -->
+  <rect x="175" y="30" width="100" height="168" rx="8" fill="white" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Full screen QR on phone -->
+  <rect x="182" y="40" width="86" height="148" rx="4" fill="#f5f5f5" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Big QR code in center -->
+  <!-- Corner squares -->
+  <rect x="192" y="52" width="22" height="22" rx="2" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="194" y="54" width="18" height="18" rx="1" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="197" y="57" width="12" height="12" fill="#1a1a1a" stroke="none"/>
+  <rect x="236" y="52" width="22" height="22" rx="2" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="238" y="54" width="18" height="18" rx="1" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="241" y="57" width="12" height="12" fill="#1a1a1a" stroke="none"/>
+  <rect x="192" y="96" width="22" height="22" rx="2" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="194" y="98" width="18" height="18" rx="1" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="197" y="101" width="12" height="12" fill="#1a1a1a" stroke="none"/>
+  <!-- QR fill dots -->
+  <rect x="222" y="55" width="6" height="6" fill="#1a1a1a" stroke="none"/>
+  <rect x="230" y="55" width="6" height="6" fill="#1a1a1a" stroke="none"/>
+  <rect x="222" y="63" width="4" height="4" fill="#1a1a1a" stroke="none"/>
+  <rect x="236" y="76" width="6" height="4" fill="#1a1a1a" stroke="none"/>
+  <rect x="222" y="76" width="4" height="6" fill="#1a1a1a" stroke="none"/>
+  <rect x="228" y="82" width="6" height="4" fill="#1a1a1a" stroke="none"/>
+  <!-- EVENT MODE label on phone -->
+  <text x="225" y="130" font-family="sans-serif" font-size="8" font-weight="bold" fill="#1a1a1a" stroke="none" text-anchor="middle">EVENT MODE</text>
+  <!-- Scan lines from a nearby person -->
+  <circle cx="335" cy="120" r="10" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="335" y1="130" x2="335" y2="155" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="335" y1="140" x2="325" y2="150" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="335" y1="140" x2="345" y2="150" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="335" y1="155" x2="329" y2="168" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="335" y1="155" x2="341" y2="168" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="315" y1="132" x2="282" y2="114" stroke="#aaa" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="200" y="220" font-family="sans-serif" font-size="11" fill="#555" stroke="none" text-anchor="middle">Hold it up. They scan. Done.</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="400" height="240" fill="#f9f9f9" stroke="none"/>
+  <!-- House exterior -->
+  <!-- Roof -->
+  <polygon points="110,90 200,40 290,90" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Walls -->
+  <rect x="120" y="90" width="160" height="120" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Door frame -->
+  <rect x="175" y="125" width="50" height="85" rx="2" fill="#f0f0f0" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Door open ajar -->
+  <rect x="175" y="125" width="30" height="85" rx="2" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <circle cx="200" cy="168" r="3" fill="#1a1a1a" stroke="none"/>
+  <!-- Window -->
+  <rect x="130" y="105" width="35" height="35" rx="2" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="147" y1="105" x2="147" y2="140" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="130" y1="122" x2="165" y2="122" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Homeowner peeking from door -->
+  <circle cx="220" cy="138" r="11" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Sales rep at door -->
+  <circle cx="90" cy="105" r="13" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="90" y1="118" x2="90" y2="158" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="90" y1="132" x2="73" y2="148" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Arm extended holding phone toward door -->
+  <line x1="90" y1="132" x2="145" y2="138" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="90" y1="158" x2="80" y2="182" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="90" y1="158" x2="100" y2="182" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Phone held out -->
+  <rect x="140" y="128" width="22" height="34" rx="3" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="143" y="132" width="16" height="22" rx="1" fill="#eee" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Mini profile on phone -->
+  <circle cx="151" cy="138" r="4" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="146" y1="146" x2="156" y2="146" stroke="#aaa" stroke-width="1"/>
+  <!-- Steps path -->
+  <line x1="40" y1="210" x2="175" y2="210" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="55" y1="205" x2="60" y2="210" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="85" y1="205" x2="90" y2="210" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="115" y1="205" x2="120" y2="210" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="145" y1="205" x2="150" y2="210" stroke="#1a1a1a" stroke-width="1"/>
+</svg>

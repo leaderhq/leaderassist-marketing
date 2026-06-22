@@ -1,0 +1,39 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="400" height="240" fill="#f9f9f9" stroke="none"/>
+  <!-- Open book / guide -->
+  <path d="M80 60 C80 55 85 50 90 50 L190 50 L190 185 L90 185 C85 185 80 180 80 175 Z" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <path d="M320 60 C320 55 315 50 310 50 L210 50 L210 185 L310 185 C315 185 320 180 320 175 Z" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Spine -->
+  <line x1="190" y1="50" x2="210" y2="50" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="190" y1="185" x2="210" y2="185" stroke="#1a1a1a" stroke-width="1.5"/>
+  <path d="M190 50 C196 85 196 150 190 185" stroke="#1a1a1a" stroke-width="1" fill="none"/>
+  <path d="M210 50 C204 85 204 150 210 185" stroke="#1a1a1a" stroke-width="1" fill="none"/>
+  <!-- Left page content: steps / chapters -->
+  <text x="135" y="75" font-family="sans-serif" font-size="9" font-weight="bold" fill="#333" stroke="none" text-anchor="middle">COMPLETE GUIDE</text>
+  <line x1="90" y1="82" x2="182" y2="82" stroke="#ddd" stroke-width="1"/>
+  <line x1="90" y1="93" x2="175" y2="93" stroke="#aaa" stroke-width="1"/>
+  <line x1="90" y1="101" x2="178" y2="101" stroke="#aaa" stroke-width="1"/>
+  <line x1="90" y1="109" x2="170" y2="109" stroke="#aaa" stroke-width="1"/>
+  <line x1="90" y1="117" x2="180" y2="117" stroke="#aaa" stroke-width="1"/>
+  <line x1="90" y1="125" x2="172" y2="125" stroke="#aaa" stroke-width="1"/>
+  <!-- Chapter numbers -->
+  <text x="93" y="93" font-family="sans-serif" font-size="8" fill="#888" stroke="none">01.</text>
+  <text x="93" y="101" font-family="sans-serif" font-size="8" fill="#888" stroke="none">02.</text>
+  <text x="93" y="109" font-family="sans-serif" font-size="8" fill="#888" stroke="none">03.</text>
+  <text x="93" y="117" font-family="sans-serif" font-size="8" fill="#888" stroke="none">04.</text>
+  <text x="93" y="125" font-family="sans-serif" font-size="8" fill="#888" stroke="none">05.</text>
+  <!-- Right page: phone illustration -->
+  <rect x="240" y="70" width="60" height="95" rx="7" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="247" y="80" width="46" height="72" rx="3" fill="#f5f5f5" stroke="#1a1a1a" stroke-width="1"/>
+  <circle cx="270" cy="172" r="5" fill="none" stroke="#1a1a1a" stroke-width="1.2"/>
+  <!-- Profile on phone -->
+  <circle cx="270" cy="98" r="12" fill="white" stroke="#1a1a1a" stroke-width="1.2"/>
+  <line x1="253" y1="116" x2="287" y2="116" stroke="#bbb" stroke-width="1"/>
+  <line x1="256" y1="123" x2="284" y2="123" stroke="#bbb" stroke-width="1"/>
+  <line x1="253" y1="130" x2="287" y2="130" stroke="#bbb" stroke-width="1"/>
+  <!-- Star / award badge -->
+  <path d="M135 148 L140 138 L145 148 L155 150 L147 158 L149 168 L140 163 L131 168 L133 158 L125 150 Z" fill="white" stroke="#1a1a1a" stroke-width="1.2"/>
+  <!-- 2026 label -->
+  <text x="135" y="185" font-family="sans-serif" font-size="10" font-weight="bold" fill="#555" stroke="none" text-anchor="middle">2026 Edition</text>
+  <text x="200" y="220" font-family="sans-serif" font-size="11" fill="#555" stroke="none" text-anchor="middle">Everything you need to know — in one place</text>
+</svg>

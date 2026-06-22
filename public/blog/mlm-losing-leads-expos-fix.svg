@@ -1,0 +1,56 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="400" height="240" fill="#f9f9f9" stroke="none"/>
+  <!-- Booth/table -->
+  <rect x="130" y="130" width="140" height="12" rx="2" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="140" y1="142" x2="135" y2="175" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="260" y1="142" x2="265" y2="175" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Banner on booth -->
+  <rect x="155" y="100" width="90" height="30" rx="2" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="168" y1="112" x2="232" y2="112" stroke="#aaa" stroke-width="1"/>
+  <line x1="175" y1="118" x2="225" y2="118" stroke="#aaa" stroke-width="1"/>
+  <!-- Rep at booth -->
+  <circle cx="200" cy="68" r="13" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="200" y1="81" x2="200" y2="118" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="200" y1="95" x2="183" y2="110" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="200" y1="95" x2="217" y2="110" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- 50 big = crowd -->
+  <text x="200" y="210" font-family="sans-serif" font-size="12" fill="#555" stroke="none" text-anchor="middle">50 conversations → 4 follow-ups</text>
+  <!-- Walking away figures (small) -->
+  <g stroke="#1a1a1a" stroke-width="1">
+    <!-- figure 1 -->
+    <circle cx="55" cy="155" r="7"/>
+    <line x1="55" y1="162" x2="55" y2="182"/>
+    <line x1="55" y1="169" x2="46" y2="178"/>
+    <line x1="55" y1="169" x2="64" y2="178"/>
+    <line x1="55" y1="182" x2="49" y2="196"/>
+    <line x1="55" y1="182" x2="61" y2="196"/>
+    <!-- arrow walking left -->
+    <line x1="75" y1="170" x2="90" y2="170" stroke="#ccc" stroke-width="1"/>
+  </g>
+  <g stroke="#1a1a1a" stroke-width="1">
+    <circle cx="340" cy="152" r="7"/>
+    <line x1="340" y1="159" x2="340" y2="179"/>
+    <line x1="340" y1="166" x2="331" y2="175"/>
+    <line x1="340" y1="166" x2="349" y2="175"/>
+    <line x1="340" y1="179" x2="334" y2="193"/>
+    <line x1="340" y1="179" x2="346" y2="193"/>
+    <line x1="320" y1="168" x2="305" y2="168" stroke="#ccc" stroke-width="1"/>
+  </g>
+  <g stroke="#1a1a1a" stroke-width="1">
+    <circle cx="68" cy="185" r="7"/>
+    <line x1="68" y1="192" x2="68" y2="210"/>
+    <line x1="68" y1="199" x2="59" y2="208"/>
+    <line x1="68" y1="199" x2="77" y2="208"/>
+    <line x1="90" y1="195" x2="105" y2="195" stroke="#ccc" stroke-width="1"/>
+    <!-- question mark above head -->
+    <text x="68" y="178" font-family="sans-serif" font-size="10" stroke="none" fill="#888" text-anchor="middle">?</text>
+  </g>
+  <g stroke="#1a1a1a" stroke-width="1">
+    <circle cx="330" cy="183" r="7"/>
+    <line x1="330" y1="190" x2="330" y2="210"/>
+    <line x1="330" y1="197" x2="321" y2="206"/>
+    <line x1="330" y1="197" x2="339" y2="206"/>
+    <line x1="310" y1="195" x2="295" y2="195" stroke="#ccc" stroke-width="1"/>
+    <text x="330" y="177" font-family="sans-serif" font-size="10" stroke="none" fill="#888" text-anchor="middle">?</text>
+  </g>
+</svg>

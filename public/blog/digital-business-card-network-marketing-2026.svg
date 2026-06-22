@@ -1,0 +1,47 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="400" height="240" fill="#f9f9f9" stroke="none"/>
+  <!-- Left: old paper cards, corporate suit -->
+  <text x="90" y="30" font-family="sans-serif" font-size="11" fill="#888" stroke="none" text-anchor="middle">OLD WAY</text>
+  <!-- Person -->
+  <circle cx="90" cy="62" r="13" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- suit collar -->
+  <path d="M81 75 L90 82 L99 75" stroke="#1a1a1a" stroke-width="1.5" fill="none"/>
+  <line x1="90" y1="75" x2="90" y2="115" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="90" y1="88" x2="74" y2="105" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="90" y1="88" x2="106" y2="105" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="90" y1="115" x2="80" y2="138" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="90" y1="115" x2="100" y2="138" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- stack of paper cards in hand -->
+  <rect x="103" y="98" width="36" height="22" rx="2" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="106" y="95" width="36" height="22" rx="2" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="109" y="92" width="36" height="22" rx="2" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="115" y1="98" x2="138" y2="98" stroke="#aaa" stroke-width="1"/>
+  <line x1="115" y1="102" x2="130" y2="102" stroke="#aaa" stroke-width="1"/>
+  <!-- X mark -->
+  <line x1="75" y1="155" x2="107" y2="180" stroke="#bbb" stroke-width="2"/>
+  <line x1="107" y1="155" x2="75" y2="180" stroke="#bbb" stroke-width="2"/>
+
+  <!-- Dividing line -->
+  <line x1="200" y1="20" x2="200" y2="220" stroke="#ddd" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- Right: phone with digital card -->
+  <text x="310" y="30" font-family="sans-serif" font-size="11" fill="#3F7A1F" stroke="none" text-anchor="middle">LEADERLEADS</text>
+  <!-- Person -->
+  <circle cx="310" cy="62" r="13" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="310" y1="75" x2="310" y2="115" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="310" y1="88" x2="294" y2="105" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="310" y1="88" x2="326" y2="105" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="310" y1="115" x2="300" y2="138" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="310" y1="115" x2="320" y2="138" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Phone in hand -->
+  <rect x="320" y="92" width="28" height="46" rx="4" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="323" y="97" width="22" height="32" rx="1" fill="#f0f0f0" stroke="#1a1a1a" stroke-width="1"/>
+  <circle cx="334" cy="133" r="3" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- mini profile on screen -->
+  <circle cx="334" cy="104" r="5" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="328" y1="114" x2="340" y2="114" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="330" y1="118" x2="338" y2="118" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Checkmark -->
+  <circle cx="291" cy="168" r="14" fill="none" stroke="#3F7A1F" stroke-width="2"/>
+  <polyline points="284,168 289,174 298,160" stroke="#3F7A1F" stroke-width="2" fill="none"/>
+</svg>

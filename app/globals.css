@@ -1,0 +1,121 @@
+@import "tailwindcss";
+@source "../../../packages/marketing-ui/src";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* LeaderLeads brand palette — source of truth, matches the favicon */
+  --color-brand-navy: #0d1b2e;
+  --color-brand-green: #5cb85c;
+  --color-brand-blue: #0160ed;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TypewriterHeadline (packages/marketing-ui/src/typewriter-headline.tsx).
+   The host page controls type-scale + leading via className; this block
+   owns per-span color, rotating-line min-height, and the cursor animation. */
+.hero-headline {
+  /* size/weight come from Tailwind classes on the same element */
+}
+.headline-static {
+  display: block;
+  color: var(--color-brand-navy);
+}
+.headline-rotate {
+  display: block;
+  color: var(--color-brand-green);
+  min-height: 1.15em;
+}
+.typewriter-cursor {
+  display: inline-block;
+  width: 4px;
+  height: 0.82em;
+  background: var(--color-brand-green);
+  margin-left: 3px;
+  border-radius: 2px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  animation: typewriter-cursor-blink 0.75s step-end infinite;
+}
+@keyframes typewriter-cursor-blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+
+/* prefers-reduced-motion: suppress the FadeIn and cursor transitions */
+@media (prefers-reduced-motion: reduce) {
+  .typewriter-cursor {
+    animation: none;
+  }
+  .fade-in-motion {
+    transition: none !important;
+  }
+}
+
+/* Blog article body — post.content HTML is injected via dangerouslySetInnerHTML
+   so styling lives here instead of inline Tailwind on every element. */
+.blog-prose {
+  color: #3f3f46;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+.blog-prose h2 {
+  color: var(--color-brand-navy);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 2.25rem 0 0.75rem;
+}
+.blog-prose h2:first-child {
+  margin-top: 0;
+}
+.blog-prose p {
+  margin: 0 0 1.1rem;
+}
+.blog-prose ul {
+  list-style: disc;
+  margin: 0 0 1.25rem;
+  padding-left: 1.25rem;
+}
+.blog-prose ul li {
+  margin: 0.35rem 0;
+}
+.blog-prose blockquote {
+  border-left: 3px solid var(--color-brand-green);
+  background: color-mix(in srgb, var(--color-brand-green) 6%, #fff);
+  color: var(--color-brand-navy);
+  font-style: italic;
+  font-weight: 500;
+  margin: 1.75rem 0;
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+}
+.blog-prose a {
+  color: var(--color-brand-green);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.blog-prose a:hover {
+  filter: brightness(0.85);
+}

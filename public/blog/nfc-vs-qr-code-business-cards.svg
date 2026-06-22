@@ -1,0 +1,54 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="400" height="240" fill="#f9f9f9" stroke="none"/>
+  <!-- Left side: NFC -->
+  <text x="90" y="28" font-family="sans-serif" font-size="12" font-weight="bold" fill="#333" stroke="none" text-anchor="middle">NFC TAP</text>
+  <!-- Phone 1 -->
+  <rect x="40" y="45" width="40" height="66" rx="5" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="44" y="50" width="32" height="50" rx="2" fill="#f0f0f0" stroke="#1a1a1a" stroke-width="1"/>
+  <circle cx="60" cy="103" r="3" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- NFC arc waves between phones -->
+  <path d="M82 70 C88 72 88 82 82 84" stroke="#1a1a1a" stroke-width="1.2" fill="none"/>
+  <path d="M82 65 C94 68 94 86 82 89" stroke="#1a1a1a" stroke-width="1.2" fill="none"/>
+  <path d="M118 70 C112 72 112 82 118 84" stroke="#1a1a1a" stroke-width="1.2" fill="none"/>
+  <path d="M118 65 C106 68 106 86 118 89" stroke="#1a1a1a" stroke-width="1.2" fill="none"/>
+  <!-- Phone 2 -->
+  <rect x="120" y="45" width="40" height="66" rx="5" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="124" y="50" width="32" height="50" rx="2" fill="#f0f0f0" stroke="#1a1a1a" stroke-width="1"/>
+  <circle cx="140" cy="103" r="3" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- NFC label -->
+  <text x="100" y="130" font-family="sans-serif" font-size="10" fill="#666" stroke="none" text-anchor="middle">phones touch</text>
+
+  <!-- Divider -->
+  <line x1="200" y1="20" x2="200" y2="220" stroke="#ddd" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="200" y="220" font-family="sans-serif" font-size="11" fill="#aaa" stroke="none" text-anchor="middle">vs</text>
+
+  <!-- Right side: QR -->
+  <text x="310" y="28" font-family="sans-serif" font-size="12" font-weight="bold" fill="#333" stroke="none" text-anchor="middle">QR CODE</text>
+  <!-- QR phone -->
+  <rect x="255" y="45" width="40" height="66" rx="5" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="259" y="50" width="32" height="50" rx="2" fill="#f0f0f0" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- QR on phone screen -->
+  <rect x="265" y="57" width="18" height="18" rx="1" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="267" y="59" width="4" height="4" fill="#1a1a1a" stroke="none"/>
+  <rect x="277" y="59" width="4" height="4" fill="#1a1a1a" stroke="none"/>
+  <rect x="267" y="69" width="4" height="4" fill="#1a1a1a" stroke="none"/>
+  <rect x="272" y="64" width="4" height="3" fill="#1a1a1a" stroke="none"/>
+  <rect x="277" y="66" width="4" height="4" fill="#1a1a1a" stroke="none"/>
+  <!-- Scanning person -->
+  <g stroke="#1a1a1a" stroke-width="1.5">
+    <circle cx="340" cy="68" r="11" fill="white"/>
+    <line x1="340" y1="79" x2="340" y2="108"/>
+    <line x1="340" y1="91" x2="325" y2="103"/>
+    <line x1="340" y1="91" x2="320" y2="82"/>
+    <line x1="340" y1="108" x2="331" y2="128"/>
+    <line x1="340" y1="108" x2="349" y2="128"/>
+  </g>
+  <!-- Small camera icon on person's phone -->
+  <rect x="308" y="75" width="18" height="13" rx="2" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+  <circle cx="317" cy="82" r="3" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Scan lines -->
+  <line x1="308" y1="80" x2="296" y2="72" stroke="#aaa" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="310" y="148" font-family="sans-serif" font-size="10" fill="#666" stroke="none" text-anchor="middle">any phone, anywhere</text>
+  <!-- Both work! label -->
+  <text x="200" y="185" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1a1a1a" stroke="none" text-anchor="middle">LeaderLeads supports both</text>
+</svg>

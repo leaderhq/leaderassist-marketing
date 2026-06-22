@@ -1,0 +1,35 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="400" height="240" fill="#f9f9f9" stroke="none"/>
+  <!-- Trade show booth backdrop -->
+  <rect x="100" y="70" width="200" height="100" rx="3" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Booth header banner -->
+  <rect x="100" y="70" width="200" height="28" rx="3" fill="#f0f0f0" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="130" y1="82" x2="270" y2="82" stroke="#bbb" stroke-width="1.5"/>
+  <line x1="145" y1="90" x2="255" y2="90" stroke="#bbb" stroke-width="1"/>
+  <!-- Booth table -->
+  <rect x="100" y="168" width="200" height="10" rx="2" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Sales rep at booth -->
+  <circle cx="200" cy="116" r="12" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="200" y1="128" x2="200" y2="162" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="200" y1="142" x2="184" y2="155" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Phone in hand capturing lead -->
+  <line x1="200" y1="142" x2="218" y2="145" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="216" y="136" width="20" height="28" rx="3" fill="white" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="219" y="140" width="14" height="18" rx="1" fill="#eee" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Visitor approaching -->
+  <g stroke="#1a1a1a" stroke-width="1.5">
+    <circle cx="330" cy="120" r="11" fill="white"/>
+    <line x1="330" y1="131" x2="330" y2="162"/>
+    <line x1="330" y1="143" x2="319" y2="155"/>
+    <line x1="330" y1="143" x2="318" y2="140"/>
+    <line x1="330" y1="162" x2="322" y2="178"/>
+    <line x1="330" y1="162" x2="338" y2="178"/>
+    <!-- walking toward booth -->
+    <line x1="310" y1="150" x2="244" y2="153" stroke-dasharray="4 3"/>
+    <polyline points="248,149 244,153 248,157" fill="none"/>
+  </g>
+  <!-- Lead captured checkmark on phone screen -->
+  <circle cx="226" cy="149" r="6" fill="none" stroke="#3F7A1F" stroke-width="1.5"/>
+  <polyline points="223,149 225,152 230,146" stroke="#3F7A1F" stroke-width="1.5" fill="none"/>
+  <text x="200" y="218" font-family="sans-serif" font-size="11" fill="#555" stroke="none" text-anchor="middle">Captured before they walk away</text>
+</svg>

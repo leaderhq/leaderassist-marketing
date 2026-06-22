@@ -1,0 +1,46 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="400" height="240" fill="#f9f9f9" stroke="none"/>
+  <!-- Three phone cards side by side, LeaderLeads tallest/highlighted -->
+  <!-- Popl card (small) -->
+  <rect x="25" y="95" width="80" height="105" rx="6" fill="white" stroke="#ccc" stroke-width="1.5"/>
+  <rect x="33" y="108" width="64" height="46" rx="2" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
+  <text x="65" y="130" font-family="sans-serif" font-size="9" fill="#999" stroke="none" text-anchor="middle">POPL</text>
+  <!-- Feature dots (some missing) -->
+  <circle cx="38" cy="165" r="3" fill="#ccc" stroke="none"/>
+  <line x1="44" y1="165" x2="95" y2="165" stroke="#ddd" stroke-width="1"/>
+  <circle cx="38" cy="175" r="3" fill="#ccc" stroke="none"/>
+  <line x1="44" y1="175" x2="85" y2="175" stroke="#ddd" stroke-width="1"/>
+  <text x="38" y="190" font-family="sans-serif" font-size="8" fill="#bbb" stroke="none">✕ Memory Moment</text>
+
+  <!-- LeaderLeads center TALL/highlighted -->
+  <rect x="140" y="45" width="120" height="165" rx="8" fill="white" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Crown on top -->
+  <polyline points="165,45 175,28 200,38 225,28 235,45" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+  <circle cx="175" cy="28" r="3" fill="#1a1a1a" stroke="none"/>
+  <circle cx="200" cy="38" r="3" fill="#1a1a1a" stroke="none"/>
+  <circle cx="225" cy="28" r="3" fill="#1a1a1a" stroke="none"/>
+  <!-- Screen area -->
+  <rect x="150" y="62" width="100" height="68" rx="3" fill="#f5f5f5" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="200" y="86" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1a1a1a" stroke="none" text-anchor="middle">LEADERLEADS</text>
+  <!-- Memory Moment feature highlight -->
+  <rect x="152" y="94" width="96" height="28" rx="3" fill="#eef7e8" stroke="#3F7A1F" stroke-width="1"/>
+  <text x="200" y="106" font-family="sans-serif" font-size="8" font-weight="bold" fill="#3F7A1F" stroke="none" text-anchor="middle">Memory Moment ✓</text>
+  <text x="200" y="117" font-family="sans-serif" font-size="7" fill="#555" stroke="none" text-anchor="middle">Exclusive</text>
+  <!-- Feature rows -->
+  <g fill="#3F7A1F" stroke="none" font-family="sans-serif" font-size="8">
+    <text x="152" y="148">✓ Event Mode</text>
+    <text x="152" y="162">✓ Free forever</text>
+    <text x="152" y="176">✓ Lead inbox</text>
+    <text x="152" y="190">✓ NFC + QR</text>
+  </g>
+
+  <!-- Blinq card (small) -->
+  <rect x="295" y="95" width="80" height="105" rx="6" fill="white" stroke="#ccc" stroke-width="1.5"/>
+  <rect x="303" y="108" width="64" height="46" rx="2" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
+  <text x="335" y="130" font-family="sans-serif" font-size="9" fill="#999" stroke="none" text-anchor="middle">BLINQ</text>
+  <circle cx="308" cy="165" r="3" fill="#ccc" stroke="none"/>
+  <line x1="314" y1="165" x2="365" y2="165" stroke="#ddd" stroke-width="1"/>
+  <circle cx="308" cy="175" r="3" fill="#ccc" stroke="none"/>
+  <line x1="314" y1="175" x2="355" y2="175" stroke="#ddd" stroke-width="1"/>
+  <text x="308" y="190" font-family="sans-serif" font-size="8" fill="#bbb" stroke="none">✕ Memory Moment</text>
+</svg>
