@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="520" viewBox="0 0 1800 520" role="img" aria-label="LeaderTask">
+  <g id="leader-chevron-mark">
+    <polygon points="75,176 197.5,86 320,176 320,230 197.5,140 75,230" fill="#1862EA"/>
+    <polygon points="75,285 197.5,195 320,285 320,339 197.5,249 75,339" fill="#06163E"/>
+    <polygon points="75,394 197.5,304 320,394 320,448 197.5,358 75,448" fill="#5CAC23"/>
+  </g>
+  <g id="leader-task-wordmark"
+     font-family="Montserrat, Gilroy, Gotham, 'Avenir Next', 'Proxima Nova', Arial, Helvetica, sans-serif"
+     font-weight="800">
+    <text x="405" y="342" font-size="222" fill="#06163E" letter-spacing="-6">Leader</text>
+    <text x="1032" y="342" font-size="222" fill="#5CAC23" letter-spacing="-6">Task</text>
+    <text x="1685" y="188" font-size="48" fill="#06163E" letter-spacing="0">TM</text>
+  </g>
+</svg>
