@@ -4,21 +4,21 @@ const nextConfig: NextConfig = {
   transpilePackages: ["@leader/marketing-ui", "@leader/types", "@leader/ui"],
   async redirects() {
     const marketingHosts = [
-      { type: "host" as const, value: "leaderstreams.io" },
-      { type: "host" as const, value: "www.leaderstreams.io" },
+      { type: "host" as const, value: "leaderassist.io" },
+      { type: "host" as const, value: "www.leaderassist.io" },
     ];
     return [
       ...marketingHosts.flatMap((has) => [
         {
           source: "/:path(login|signup|reset|forgot-password|dashboard)",
           has: [has],
-          destination: "https://streams.leaderhq.io/:path",
+          destination: "https://assist.leaderhq.io/:path",
           permanent: true,
         },
         {
           source: "/dashboard/:path*",
           has: [has],
-          destination: "https://streams.leaderhq.io/dashboard/:path*",
+          destination: "https://assist.leaderhq.io/dashboard/:path*",
           permanent: true,
         },
       ]),

@@ -14,27 +14,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://leaderstreams.io"),
-  title: "LeaderStreams — Social publishing for your entire network",
-  description: "Schedule and publish to every social channel for your whole team from one calendar. Built for field leaders in network marketing.",
-  applicationName: "LeaderStreams",
+  metadataBase: new URL("https://leaderassist.io"),
+  title: "LeaderAssist — AI assistant built for field leaders",
+  description: "Your AI-powered field leader assistant. Draft messages, coach reps, summarize your pipeline, and get answers from your own LeaderHQ data — instantly.",
+  applicationName: "LeaderAssist",
   manifest: "/manifest.webmanifest",
   appleWebApp: {
     capable: true,
-    title: "LeaderStreams",
+    title: "LeaderAssist",
     statusBarStyle: "default",
   },
   openGraph: {
     type: "website",
-    siteName: "LeaderStreams",
-    title: "LeaderStreams — Every post, scheduled and published.",
-    description: "Social publishing built for field leaders — schedule and publish to every channel for your whole team from one calendar.",
-    url: "https://leaderstreams.io",
+    siteName: "LeaderAssist",
+    title: "LeaderAssist — Your AI field leader assistant.",
+    description: "Draft messages, coach reps, summarize your pipeline, and get answers from your own LeaderHQ data — instantly.",
+    url: "https://leaderassist.io",
   },
   twitter: {
     card: "summary_large_image",
-    title: "LeaderStreams — Every post, scheduled and published.",
-    description: "Social publishing built for field leaders — schedule and publish to every channel for your whole team from one calendar.",
+    title: "LeaderAssist — Your AI field leader assistant.",
+    description: "Draft messages, coach reps, summarize your pipeline, and get answers from your own LeaderHQ data — instantly.",
   },
 };
 
