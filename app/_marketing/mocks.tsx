@@ -10,19 +10,11 @@ interface ChatMessage {
 const MESSAGES: ChatMessage[] = [
   {
     role: 'user',
-    text: 'Who on my team needs follow-up today?',
+    text: 'Follow up with everyone I met Saturday.',
   },
   {
     role: 'assistant',
-    text: '3 leads from last week have no follow-up task yet: Alex Leader (Summit), Maria Chen (Apex), and Tom Bridges (Vertex). Want me to create tasks for all three?',
-  },
-  {
-    role: 'user',
-    text: 'Draft a follow-up message for Alex.',
-  },
-  {
-    role: 'assistant',
-    text: 'Hey Alex — great connecting at Summit last week. Wanted to follow up and see if you had any questions about getting started. Happy to jump on a quick call this week. Let me know what works!',
+    text: 'On it. 14 new contacts from Saturday — here’s what I did:',
   },
 ];
 
@@ -106,29 +98,25 @@ export function AiChatMock() {
           </div>
         ))}
 
-        {/* Typing indicator */}
-        <div style={{ display: 'flex', alignItems: 'flex-end', gap: 8 }}>
-          <div style={{
-            width: 24, height: 24, borderRadius: '50%',
-            background: NAVY, flexShrink: 0,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-          }}>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" fill={GREEN} />
-            </svg>
-          </div>
-          <div style={{
-            padding: '10px 14px', borderRadius: '14px 14px 14px 4px',
-            background: '#fff', border: '1px solid #e5e7eb',
-            display: 'flex', gap: 4, alignItems: 'center',
-          }}>
-            {[0, 1, 2].map((d) => (
-              <div key={d} style={{
-                width: 6, height: 6, borderRadius: '50%',
-                background: '#d1d5db',
-              }} />
-            ))}
-          </div>
+        {/* Action chips */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 6, paddingLeft: 32 }}>
+          {[
+            '14 follow-up emails drafted',
+            '3 demo calls booked',
+            'Reminders set for Tuesday',
+          ].map((chip) => (
+            <div key={chip} style={{
+              display: 'inline-flex', alignItems: 'center', gap: 6,
+              padding: '4px 10px', borderRadius: 20,
+              background: `${GREEN}18`, border: `1px solid ${GREEN}40`,
+              fontSize: 11, fontWeight: 600, color: GREEN,
+            }}>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none">
+                <path d="M20 6L9 17l-5-5" stroke={GREEN} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              {chip}
+            </div>
+          ))}
         </div>
       </div>
 

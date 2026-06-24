@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://leaderassist.io"),
-  title: "LeaderAssist — AI assistant built for field leaders",
-  description: "Your AI-powered field leader assistant. Draft messages, coach reps, summarize your pipeline, and get answers from your own LeaderHQ data — instantly.",
+  title: "LeaderAssist — AI Assistant for Leaders",
+  description: "One chat that drafts your follow-ups, books your calls, and runs your busywork across every Leader app — so you can focus on people, not tools.",
   applicationName: "LeaderAssist",
   manifest: "/manifest.webmanifest",
   appleWebApp: {
@@ -27,14 +27,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "LeaderAssist",
-    title: "LeaderAssist — Your AI field leader assistant.",
-    description: "Draft messages, coach reps, summarize your pipeline, and get answers from your own LeaderHQ data — instantly.",
+    title: "LeaderAssist — Your AI assistant for the whole Suite.",
+    description: "One chat that drafts your follow-ups, books your calls, and runs your busywork across every Leader app — so you can focus on people, not tools.",
     url: "https://leaderassist.io",
   },
   twitter: {
     card: "summary_large_image",
-    title: "LeaderAssist — Your AI field leader assistant.",
-    description: "Draft messages, coach reps, summarize your pipeline, and get answers from your own LeaderHQ data — instantly.",
+    title: "LeaderAssist — Your AI assistant for the whole Suite.",
+    description: "One chat that drafts your follow-ups, books your calls, and runs your busywork across every Leader app — so you can focus on people, not tools.",
   },
 };
 
