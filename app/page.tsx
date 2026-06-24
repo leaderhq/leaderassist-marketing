@@ -8,11 +8,11 @@ const SITE_URL = 'https://leaderassist.io';
 const APP_URL = 'https://assist.leaderhq.io';
 
 const ASSIST_PHRASES = [
-  'field leaders.',
-  'your whole team.',
-  'top closers.',
-  'every rep.',
-  'your downline.',
+  'for the whole Suite.',
+  'for every follow-up.',
+  'for your busiest days.',
+  'that never drops a ball.',
+  'that just gets it done.',
 ] as const;
 
 const NAV_LINKS = [
@@ -55,23 +55,23 @@ const FOOTER_COLUMNS = [
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: 'LeaderAssist — AI assistant built for field leaders',
+  title: 'LeaderAssist — AI Assistant for Leaders',
   description:
-    'Your AI-powered field leader assistant. Draft messages, coach reps, summarize your pipeline, and get answers from your own LeaderHQ data — instantly.',
+    'One chat that drafts your follow-ups, books your calls, and runs your busywork across every Leader app — so you can focus on people, not tools.',
   alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
     siteName: 'LeaderAssist',
-    title: 'LeaderAssist — Your AI field leader assistant.',
+    title: 'LeaderAssist — Your AI assistant for the whole Suite.',
     description:
-      'Draft messages, coach reps, summarize your pipeline, and get answers from your own LeaderHQ data — instantly.',
+      'One chat that drafts your follow-ups, books your calls, and runs your busywork across every Leader app — so you can focus on people, not tools.',
     url: SITE_URL,
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'LeaderAssist — Your AI field leader assistant.',
+    title: 'LeaderAssist — Your AI assistant for the whole Suite.',
     description:
-      'Draft messages, coach reps, summarize your pipeline, and get answers from your own LeaderHQ data — instantly.',
+      'One chat that drafts your follow-ups, books your calls, and runs your busywork across every Leader app — so you can focus on people, not tools.',
   },
 };
 
@@ -111,24 +111,24 @@ function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-16 pt-8 md:px-6 lg:grid-cols-2 lg:gap-12 lg:pb-24 lg:pt-12">
         <FadeIn>
           <TypewriterHeadline
-            staticPrefix="AI assistant built for"
+            staticPrefix="Your AI assistant"
             phrases={ASSIST_PHRASES}
             className="text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.4rem]"
           />
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-zinc-600">
-            LeaderAssist knows your data — your leads, your calendar, your tasks, your team. Ask it anything. It drafts messages, surfaces follow-ups, coaches your reps, and answers questions no generic AI could touch.
+            One chat that drafts your follow-ups, books your calls, and runs your busywork across every Leader app — so you can focus on people, not tools.
           </p>
           <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
             <a href={`${APP_URL}/signup`} className="inline-flex min-h-[44px] w-full items-center justify-center rounded-xl bg-brand-green px-6 text-base font-semibold text-white shadow-md shadow-brand-green/25 transition hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-navy sm:w-auto">
-              Get Started Free
+              Try LeaderAssist free
             </a>
             <Link href="/how-it-works" className="inline-flex min-h-[44px] items-center justify-center rounded-xl px-4 text-base font-semibold text-brand-green focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-green">
-              See How It Works →
+              See how it works →
             </Link>
           </div>
           <p className="mt-5 text-sm text-zinc-500">
             Free to start. No credit card required.{' '}
-            <strong className="font-semibold text-zinc-700">Powered by your real Leader Suite data.</strong>
+            <strong className="font-semibold text-zinc-700">Works across the whole Leader Suite.</strong>
           </p>
         </FadeIn>
         <FadeIn delay={120} className="flex justify-center lg:justify-end">
@@ -159,17 +159,17 @@ function TrustBand() {
 interface Feature { title: string; body: string; icon: MarketingIconName; }
 
 const FEATURES: Feature[] = [
-  { title: 'Knows your data.', body: 'LeaderAssist reads your actual LeaderHQ data — leads, tasks, meetings, and team activity. It answers from your context, not the internet.', icon: 'target' },
-  { title: 'Draft follow-up messages.', body: 'Tell it who to reach out to and it drafts the message — in your voice, with the right context from your last interaction.', icon: 'bell' },
-  { title: 'Surface who needs attention.', body: 'Ask "who needs follow-up today?" and get a ranked list pulled directly from your leads and tasks — no digging required.', icon: 'users' },
-  { title: 'Coach your reps.', body: "Give it a rep's recent activity and ask for coaching notes. LeaderAssist identifies gaps and suggests specific talking points for your next call.", icon: 'trophy' },
-  { title: 'Summarize your pipeline.', body: 'Get a crisp pipeline summary in seconds — new leads, stale contacts, upcoming meetings, and team-wide activity all in one answer.', icon: 'bar-chart' },
+  { title: 'Ask in plain English.', body: '"Follow up with everyone I met Saturday." Done. No menus, no clicks — just tell it what you need.', icon: 'target' },
+  { title: 'Drafts, books, and sends.', body: 'Follow-up emails, booked calls, broadcast blasts — LeaderAssist does the busywork and hands you the wins.', icon: 'bell' },
+  { title: 'Works across the Suite.', body: 'One assistant for Leads, Cal, Send, Streams and the rest. It moves between your tools so you don\'t have to.', icon: 'users' },
+  { title: 'Learns your rhythm.', body: 'It picks up your voice, your team, and how you work — getting sharper and more useful every day.', icon: 'trophy' },
+  { title: 'Knows your data.', body: 'LeaderAssist reads your actual Leader Suite data — leads, tasks, meetings, and team activity. It answers from your context, not the internet.', icon: 'bar-chart' },
   { title: 'Prep for meetings.', body: "Ask LeaderAssist to prep you for a meeting — it pulls the contact's history, notes, and any open tasks so you walk in ready.", icon: 'calendar' },
   { title: 'Generate content.', body: 'Need a social post, a follow-up sequence, or an event announcement? LeaderAssist drafts it and can push it straight to LeaderStreams or LeaderSend.', icon: 'share' },
-  { title: 'Team performance Q&A.', body: 'Ask "who are my top performers this month?" or "which leads have gone cold?" and get a straight answer from your real data.', icon: 'check-circle' },
-  { title: 'Task creation on the fly.', body: 'Tell it what needs to happen and it creates the task in LeaderTask — already assigned, prioritized, and due-dated. No switching apps.', icon: 'clipboard' },
+  { title: 'Surface who needs attention.', body: 'Ask "who needs follow-up today?" and get a ranked list pulled directly from your leads and tasks — no digging required.', icon: 'check-circle' },
+  { title: 'Task creation on the fly.', body: 'Tell it what needs to happen and it creates the task — already assigned, prioritized, and due-dated. No switching apps.', icon: 'clipboard' },
   { title: 'Leader Suite SSO.', body: "One login across the whole suite. If you're signed into LeaderLeads or LeaderCal, you're already in LeaderAssist. No extra step.", icon: 'link' },
-  { title: 'Always learning.', body: 'The more you use LeaderAssist, the better it knows your voice, your team, and your workflow. It gets smarter with every conversation.', icon: 'building' },
+  { title: 'Coach your reps.', body: "Give it a rep's recent activity and ask for coaching notes. LeaderAssist identifies gaps and suggests specific talking points for your next call.", icon: 'building' },
   { title: 'Mobile-first.', body: 'Full AI power from your phone. Ask questions between events, draft messages on the road, and get answers wherever you are.', icon: 'clock' },
 ];
 
@@ -178,8 +178,8 @@ function FeaturesGrid() {
     <section className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-24">
       <FadeIn>
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-brand-navy sm:text-4xl">An AI that actually knows your business.</h2>
-          <p className="mx-auto mt-4 max-w-xl text-lg text-zinc-600">Not a generic chatbot. An assistant trained on your real data and built for the field-leader workflow.</p>
+          <h2 className="text-3xl font-bold tracking-tight text-brand-navy sm:text-4xl">Your day, handled.</h2>
+          <p className="mx-auto mt-4 max-w-xl text-lg text-zinc-600">One assistant. Four ways it gives you your time back — and then some.</p>
         </div>
       </FadeIn>
       <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -202,15 +202,15 @@ function DataAwareSection() {
     <section className="relative overflow-hidden text-white" style={{ background: '#06163E' }}>
       <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-24 lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
         <FadeIn>
-          <p className="text-sm font-semibold uppercase tracking-wider text-brand-green">LeaderAssist + Your Leader Suite Data</p>
+          <p className="text-sm font-semibold uppercase tracking-wider text-brand-green">One assistant — your whole Suite</p>
           <h2 className="mt-4 text-3xl font-bold leading-[1.12] tracking-tight sm:text-4xl lg:text-[2.75rem]">
-            Not ChatGPT.<br />Your AI.
+            You didn&apos;t sign up<br />to do admin.
           </h2>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-zinc-300">
-            Generic AI tools give generic answers. LeaderAssist pulls from your actual leads, tasks, meetings, and team data — so every answer is specific to your business, your people, and your next move.
+            Leaders don&apos;t burn out from the work they love. They burn out from everything around it — the follow-ups, the scheduling, the five tools that each want five more minutes. LeaderAssist ties the whole Suite together with one assistant that actually does the work.
           </p>
           <p className="mt-6 border-l-2 border-brand-green pl-4 text-base font-medium text-zinc-200">
-            Ask it who to call first today. It won’t guess — it will tell you, based on who you scanned last week and what tasks are overdue.
+            It doesn&apos;t just answer. It gets things done.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a href={`${APP_URL}/signup`} className="inline-flex min-h-[44px] items-center justify-center rounded-xl bg-brand-green px-5 text-sm font-semibold text-white shadow-md shadow-brand-green/25 transition hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
@@ -224,9 +224,9 @@ function DataAwareSection() {
         <FadeIn delay={120} className="mt-12 flex justify-center lg:mt-0 lg:justify-end">
           <div className="relative w-full max-w-[320px] space-y-3">
             {[
-              { q: 'Who should I call first today?', a: 'Alex Leader — scanned 6 days ago, no follow-up task, high intent signal from your last meeting.' },
-              { q: 'How is Maria doing this month?', a: '4 new leads, 2 tasks completed, 1 meeting booked. She’s up 40% from last month. 🚀' },
-              { q: 'Draft a re-engagement for Tom Bridges.', a: 'Hey Tom — it’s been a few weeks. Wanted to check in and see if now’s a better time to connect. Happy to answer any questions!' },
+              { q: "Follow up with everyone I met Saturday.", a: "On it. 14 new contacts from Saturday — 14 follow-up emails drafted, 3 demo calls booked, and reminders set for Tuesday." },
+              { q: "Who should I call first today?", a: "Alex Leader — scanned 6 days ago, no follow-up task, high intent signal from your last meeting." },
+              { q: "Draft a broadcast to my whole team.", a: "Done — drafted in LeaderSend. Want me to schedule it for Tuesday morning when open rates are highest?" },
             ].map((item, i) => (
               <div key={i} className="space-y-2">
                 <div className="rounded-xl px-4 py-3 text-xs font-medium text-white" style={{ background: 'rgba(24,98,234,0.25)', border: '1px solid rgba(24,98,234,0.4)' }}>{item.q}</div>
@@ -269,15 +269,15 @@ function HowItWorksSection() {
   );
 }
 
-const INTEGRATIONS = ['LeaderLeads','LeaderTask','LeaderCal','LeaderSend','LeaderStreams','Google Workspace','Outlook','Slack','Zapier','OpenAI','Postmark','HubSpot'];
+const INTEGRATIONS = ['LeaderLeads','LeaderCal','LeaderSend','LeaderStreams','LeaderLMS','LeaderAffiliate','LeaderTask','Google Workspace','Outlook','Postmark'];
 
 function IntegrationsSection() {
   return (
     <section className="border-y border-zinc-100 bg-zinc-50/50">
       <div className="mx-auto max-w-5xl px-4 py-16 md:px-6 md:py-20 text-center">
         <FadeIn>
-          <h2 className="text-2xl font-bold text-brand-navy sm:text-3xl">Wired into everything you already use.</h2>
-          <p className="mx-auto mt-3 max-w-lg text-base text-zinc-600">LeaderAssist reads from your whole Leader Suite and acts across every tool in your stack.</p>
+          <h2 className="text-2xl font-bold text-brand-navy sm:text-3xl">One assistant — your whole Suite.</h2>
+          <p className="mx-auto mt-3 max-w-lg text-base text-zinc-600">LeaderAssist reads from your whole Leader Suite and acts across every tool in your stack. One login. Every app.</p>
         </FadeIn>
         <div className="mt-10 flex flex-wrap justify-center gap-3">
           {INTEGRATIONS.map((name, i) => (
@@ -293,19 +293,19 @@ function IntegrationsSection() {
 
 const TIERS = [
   {
-    name: 'Free', price: '$0', period: 'forever', description: 'For solo leaders exploring AI.',
-    features: ['Up to 50 AI messages / mo','LeaderLeads data access','Message drafting','Pipeline summaries','Leader Suite SSO'],
-    cta: 'Start for free', href: `${APP_URL}/signup`, featured: false,
+    name: 'Free', price: '$0', period: 'forever', description: 'Your AI assistant — no card required.',
+    features: ['Your AI assistant','Plain-English requests','Connect one Leader app','25 actions / month','Email support'],
+    cta: 'Try LeaderAssist free', href: `${APP_URL}/signup`, featured: false,
   },
   {
-    name: 'Team', price: '$22', period: 'per user / mo', description: 'For teams that run on data.',
-    features: ['Unlimited AI messages','Full Leader Suite data access','Rep coaching & summaries','Task creation from chat','LeaderStreams content push','Meeting prep briefs','All Leader Suite integrations'],
-    cta: 'Start Team trial', href: `${APP_URL}/signup?plan=team`, featured: true,
+    name: 'Pro', price: '$12', period: '/mo (~$9.60/mo billed yearly)', description: 'Unlimited actions across the whole Suite.',
+    features: ['Everything in Free','Unlimited actions','Every Leader app connected','Drafting, booking & sending','Learns your voice & rhythm','Priority support'],
+    cta: 'Start Pro free', href: `${APP_URL}/signup?plan=pro`, featured: true,
   },
   {
-    name: 'Executive', price: '$45', period: 'per user / mo', description: 'For organizations powered by AI.',
-    features: ['Everything in Team','Custom AI training on your data','Team-wide AI insights','Priority support','Audit logs','SSO enforcement','Dedicated onboarding'],
-    cta: 'Contact sales', href: '/contact', featured: false,
+    name: 'Team', price: '$9', period: '/seat/mo (5-seat minimum)', description: 'For the teams that run on execution.',
+    features: ['Everything in Pro for every seat','Shared team context','Admin controls & roles','Manager visibility','Team broadcasts'],
+    cta: 'Start Team trial', href: `${APP_URL}/signup?plan=team`, featured: false,
   },
 ];
 
@@ -314,8 +314,8 @@ function PricingSection() {
     <section className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-24">
       <FadeIn>
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-brand-navy sm:text-4xl">Straightforward pricing.</h2>
-          <p className="mx-auto mt-4 max-w-xl text-lg text-zinc-600">Start free. Unlock the full power when your team is ready.</p>
+          <h2 className="text-3xl font-bold tracking-tight text-brand-navy sm:text-4xl">Simple pricing. Start free.</h2>
+          <p className="mx-auto mt-4 max-w-xl text-lg text-zinc-600">Start free. Upgrade when you&apos;re ready to hand off more.</p>
         </div>
       </FadeIn>
       <div className="mt-12 grid gap-6 lg:grid-cols-3">
@@ -356,18 +356,19 @@ function FinalCta() {
   return (
     <section className="bg-brand-navy py-20 text-center text-white md:py-24">
       <FadeIn>
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-          Stop digging through dashboards.<br />Just ask.
+        <p className="text-sm font-semibold uppercase tracking-widest text-brand-green">Ready to get your time back?</p>
+        <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
+          Meet the assistant that runs your day.
         </h2>
         <p className="mx-auto mt-4 max-w-lg text-lg text-zinc-300">
-          LeaderAssist gives you instant answers from your own data — so you spend less time reporting and more time leading.
+          LeaderAssist drafts your follow-ups, books your calls, and handles the busywork — so you can focus on the people and moments that actually matter.
         </p>
         <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
           <a href={`${APP_URL}/signup`} className="inline-flex min-h-[48px] items-center justify-center rounded-xl bg-brand-green px-7 text-base font-semibold text-white shadow-lg shadow-brand-green/20 transition hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-            Get started free
+            Try LeaderAssist free
           </a>
           <Link href="/how-it-works" className="inline-flex min-h-[48px] items-center justify-center rounded-xl border border-white/20 px-7 text-base font-semibold text-zinc-200 transition hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-            See how it works
+            See how it works →
           </Link>
         </div>
         <p className="mt-5 text-sm text-zinc-400">Free to start. Part of the Leader Suite.</p>
