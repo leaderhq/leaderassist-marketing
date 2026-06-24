@@ -1,3 +1,4 @@
-# Brand assets require Jay's approval before any changes can merge
+# Brand assets and logo sizing require Jay's approval before any changes can merge
 /public/brand/ @JayAndiePay
-
+/packages/marketing-ui/src/site-nav.tsx @JayAndiePay
+/packages/marketing-ui/src/site-footer.tsx @JayAndiePay
