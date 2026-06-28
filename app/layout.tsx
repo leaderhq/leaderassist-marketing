@@ -19,6 +19,13 @@ export const metadata: Metadata = {
   description: "One chat that drafts your follow-ups, books your calls, and runs your busywork across every Leader app — so you can focus on people, not tools.",
   applicationName: "LeaderAssist",
   manifest: "/manifest.webmanifest",
+  icons: {
+    icon: [
+      { url: "/favicon-light.png", type: "image/png", media: "(prefers-color-scheme: light)" },
+      { url: "/favicon-dark.png", type: "image/png", media: "(prefers-color-scheme: dark)" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+  },
   appleWebApp: {
     capable: true,
     title: "LeaderAssist",
